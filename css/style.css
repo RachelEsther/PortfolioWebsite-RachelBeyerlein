@@ -6,10 +6,6 @@ Secondary Color (medium grey): #545a61;
 Secondary Color (black): #000000;
 */
 
-img {
-    width: 100%;
-  }
-
 body {
     font-family: 'DM Sans', sans-serif;
     background-color: white;
@@ -26,6 +22,7 @@ h1, h2, h3, h4 {
   h1 {
     font-size: 5em;
     font-weight: 600;
+    line-height: 1em;
   }
   h2 {
     font-size: 2.25em;
@@ -44,16 +41,26 @@ a {
     color: #ff7f50;
     text-decoration: none; /* No underlining */
 }
+
   a:visited { /* visited link */
     color: #ff7f50;
   }
   a:hover,
   a:focus {
   color: #a306f1;
-  /* text-decoration: underline; */
   }
+
   a:active { /* selected link */
     color: #ff7f50;
+  }
+  
+  #logo {
+    font-family: 'Bungee Shade', cursive;
+    font-size: 20px;
+    font-weight: 500;
+    color: #ff7f50;
+    width: 100%;
+    /* logo:hover : font-family: 'Bungee', cursive; */
   }
 
 .button {
@@ -88,8 +95,122 @@ a {
     box-shadow: #ff7f50 4px 4px 0 0;
 
   }
+
   .button.contact:hover,
   .button.contact:active {
     background-color: #a306f1;
     color: #ffffff;
   }
+
+  /* Layout styling */
+
+  .container {
+    padding: 0;
+  }
+
+  .row {
+    margin: 25px 0; /* 25px top and bottom, 0 left and right */
+  }
+
+  #work .row { 
+    padding-bottom: 25px; 
+    border-bottom: 1px 
+    solid #4a4a4a; 
+  }
+
+  #hero h1, 
+  #hero p{
+    text-align: center;
+    color:#a306f1;
+  }
+
+  header {
+    background-color: #ffffff;
+    padding: 10px;
+    margin: 0px;
+    border-bottom: 3px solid #830e90;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+  }
+
+  nav > ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  nav > ul > li {
+    display: inline-block;
+    padding: 0 15px;
+    color:#a306f1;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  nav > ul > li > a:visited, 
+  nav > ul > li > a:focus, 
+  nav > ul > li > a:hover, 
+  nav > ul > li > a:active {
+    color:#545a61;
+    display: inline-block;
+    width: 100%;
+  }
+
+  #hero {
+    background-color: #ff9c33;
+    padding: 20px 0;
+    display: inline-block;
+    width: 100%;
+    padding-top: 133px;
+  }
+
+  .icon { /* Customizes all icons at once */
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    align-self: center;
+    color:#a306f1
+  }
+
+  #work {
+    margin: auto;
+    max-width: 850px;
+    align-items: center;
+  }
+
+  #me {
+    padding-top: 100px;
+  }
+
+  #hormony {
+    padding-top: 100px;
+  }
+
+
+img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 25px;
+}
+
+#hormony img {
+  max-width: 1200px;
+  align-content: center;
+  border-radius: 0%;
+}
+
+.hormonyheader {
+  background-color: #FEF6EC;
+}
+
+#hormonylogo {
+width: 384px;
+height: 96px;
+}
+
+#KeyTakeaways {
+  background-color: #B15F48;
+  color: #ffffff;
+  padding: 15px;
+  border-radius: 25px;
+}
