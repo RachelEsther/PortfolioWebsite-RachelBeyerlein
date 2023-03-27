@@ -89,11 +89,10 @@ a {
   }
 
   .button.contact {
-    background-color: transparent;
+    background-color: #fbeee0;;
     text-transform: uppercase;
-    border: 2px solid #ff7f50;
-    box-shadow: #ff7f50 4px 4px 0 0;
-
+    border: 2px solid #ff9c33;
+    box-shadow: #ff9c33 4px 4px 0 0;
   }
 
   .button.contact:hover,
@@ -213,4 +212,17 @@ height: 96px;
   color: #ffffff;
   padding: 15px;
   border-radius: 25px;
+}
+
+#contact {
+  background-color:#a306f1;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+  color: #ffffff;
+  text-align: center;
+}
+
+#social{
+  padding-top: 20px;
 }
