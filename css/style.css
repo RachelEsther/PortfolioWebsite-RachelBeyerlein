@@ -20,7 +20,7 @@ h1, h2, h3, h4 {
 
 }
   h1 {
-    font-size: 5em;
+    font-size: 4em;
     font-weight: 600;
     line-height: 1em;
   }
@@ -55,12 +55,12 @@ a {
   }
   
   #logo {
-    font-family: 'Bungee Shade', cursive;
-    font-size: 20px;
+    display: inline;
+    margin: 2vw;
+    font-size: 30px;
     font-weight: 500;
-    color: #ff7f50;
+    color: #904b0e;
     width: 100%;
-    /* logo:hover : font-family: 'Bungee', cursive; */
   }
 
 .button {
@@ -103,7 +103,12 @@ a {
 
   /* Layout styling */
 
+  * {
+    box-sizing: border-box;
+  }
+
   .container {
+    max-width: 1200px;
     padding: 0;
   }
 
@@ -111,23 +116,37 @@ a {
     margin: 25px 0; /* 25px top and bottom, 0 left and right */
   }
 
-  #work .row { 
+  .work .row { 
     padding-bottom: 25px; 
+    padding: 10px;
     border-bottom: 1px 
     solid #4a4a4a; 
   }
 
-  #hero h1, 
-  #hero p{
+  .work {
+    margin: auto;
+    padding: 5vw;
+    align-items: center;
+  }
+
+  .work h2 {
+    color:#904b0e;
     text-align: center;
-    color:#a306f1;
+    border-bottom: 1px
+    solid #7b3c04;
+  }
+
+  #hormony span {
+    text-align: center;
+    color:#7b3c04;
+    display: inline;
   }
 
   header {
     background-color: #ffffff;
     padding: 10px;
     margin: 0px;
-    border-bottom: 3px solid #830e90;
+    border-bottom: 3px solid #904b0e;
     text-align: center;
     position: fixed;
     width: 100%;
@@ -141,7 +160,6 @@ a {
   nav > ul > li {
     display: inline-block;
     padding: 0 15px;
-    color:#a306f1;
     text-transform: uppercase;
     font-weight: 700;
   }
@@ -156,58 +174,49 @@ a {
   }
 
   #hero {
-    background-color: #ff9c33;
+    color:#422800;
+    background-color: #ffb05d;
     padding: 20px 0;
     display: inline-block;
     width: 100%;
-    padding-top: 133px;
-  }
+    padding-top: 90px;
+    text-align: center;
 
-  .icon { /* Customizes all icons at once */
-    width: 100px;
-    height: 100px;
-    display: inline-block;
-    align-self: center;
-    color:#a306f1
   }
-
-  #work {
-    margin: auto;
-    max-width: 850px;
-    align-items: center;
-  }
-
-  #me {
+ 
+  #about-page {
     padding-top: 100px;
   }
 
-  #hormony {
-    padding-top: 100px;
+  #about-page div {
+    padding-right: 5px;
   }
 
+  #about-page h2,
+  #about-page h3 { 
+    margin-top: 0;
+  }
 
-img {
+.work img {
   width: 100%;
   max-width: 500px;
   border-radius: 25px;
 }
 
-#hormony img {
-  max-width: 1200px;
-  align-content: center;
-  border-radius: 0%;
+div.casestudy img {
+  max-width: 1000px;
 }
 
-.hormonyheader {
-  background-color: #FEF6EC;
+#hormony {
+  padding-top: 65px;
+  max-width: 900px;
 }
 
-#hormonylogo {
-width: 384px;
-height: 96px;
+#hormonyhero {
+  background-color:bisque;
 }
 
-#KeyTakeaways {
+.KeyTakeaways {
   background-color: #B15F48;
   color: #ffffff;
   padding: 15px;
@@ -215,7 +224,7 @@ height: 96px;
 }
 
 #contact {
-  background-color:#a306f1;
+  background-color:#904b0e;
   padding: 20px 0;
   display: inline-block;
   width: 100%;
@@ -223,6 +232,95 @@ height: 96px;
   text-align: center;
 }
 
-#social{
-  padding-top: 20px;
+#contact svg {
+  padding: 20px 10px;
 }
+
+#global-nav {
+  max-width: 100%;
+}
+
+.berlin-illustration {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+@keyframes color-change {
+  from {fill: #edc655;}
+  to {fill: #f76414;}
+}
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+
+  [class*="col-"] {
+    float: left;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) { 
+ 
+  #global-nav {
+    width: 100%;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  } 
+
+}
+
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
+}
+

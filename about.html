@@ -16,13 +16,10 @@
     </head>
     
     <body>
-        <!--For the header-->
-        <header class="container">
-            <div>
-                <div>
-                    <a href="index.html" id="logo">Rachel Beyerlein</a>
-                </div>
-
+         <!--For the header-->
+         <header>
+            <div id="global-nav">
+                <a href="index.html" id="logo">Rachel Beyerlein</a>
                 <nav>
                     <ul>
                         <li><a href="index.html">UX Design</a></li>
@@ -35,15 +32,15 @@
         </header>
 
         <!--For the hero Section-->
-        <div>
-            <div id="me">
+        <div class="container">
+            <div id="about-page">
                 <picture>
                     <source srcset="img/aboutme/RachelBeyerlein-HeadshotCM-600x400.jpg" media="(max-width:600px)">
                     <img src="img/aboutme/RachelBeyerlein-HeadshotCM-800x533.jpg" alt="me at CreativeMorningsHH">
                 </picture>
                 <div>
-                    <div>
-                        <div>
+                    <div class="row">
+                        <div class="column col-md-6 col-lg-7">
                             <h2>My Story</h2>
                             <p>I'm Rachel, a trilingual user and consumer experience designer, and design event organizer, based out of Montreal. After 15 years of pushing pixels and pulling handlebars within the retail, CPG and branding space at <a href="https://www.peter-schmidt-group.de/" target="_blank">Peter Schmidt Group</a> and <a href="https://pahnke.de" target="_blank">Pahnke</a>, I'm focusing all my energies to my favorite part of design - the “why.” </p>
                             <p>I grew up in New York, studied in Michigan, and worked and lived in Atlanta, Ga, Hamburg, Germany and now Montreal, Quebec. Immersing myself in various cultures has taught me to listen intently, observe intensely and explore constantly. This curiosity and humility are what drew me to the strategic nature of User Experience Design.</p>
@@ -51,7 +48,7 @@
                             <p>Many of these works are undisclosed due to NDA agreements - <a href="mailto:ranscher@gmail.com">reach out</a> for more information.</p>
                             <a href="files/RBeyerlein_CV2023.pdf" class="button" target="_blank">Resumé</a>
                         </div>
-                        <div>
+                        <div class="column col-md-6 col-lg-5">
                             <h2>My Skills</h2>
                             <div>
                                 <h3>Skills</h3>
@@ -96,23 +93,46 @@
                 </div>
       
                 <div id="social">
-                     <!--social media layout and placeholders-->
-                     <a href="LINKEDIN-URL" target="_blank">
-                        <svg fill="#ff9c33" width="800px" height="800px" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" class="icon">
-                            <path d="M398.4,0H31.8C14.2,0,0,13.8,0,30.8v368.5c0,17,14.2,30.8,31.8,30.8h366.6     c17.5,0,31.8-13.8,31.8-30.8V30.8C430.1,13.8,415.9,0,398.4,0z M130.4,360h-65V165.8h65V360z M97.9,139.3h-0.4     c-21.8,0-35.9-14.9-35.9-33.6c0-19,14.5-33.5,36.8-33.5c22.2,0,35.9,14.5,36.3,33.5C134.7,124.4,120.6,139.3,97.9,139.3z      M364.7,360h-65V256.1c0-26.1-9.4-43.9-32.9-43.9c-18,0-28.6,12-33.3,23.6c-1.7,4.1-2.2,9.9-2.2,15.7V360h-65     c0,0,0.9-176,0-194.2h65v27.5c8.6-13.2,24-32.1,58.5-32.1c42.8,0,74.8,27.7,74.8,87.4L364.7,360L364.7,360z M230.9,194     c0.1-0.2,0.3-0.4,0.4-0.6v0.6H230.9z" id="LinkedIn__x28_alt_x29_"/>
-                        </svg>
-                    </a>
-                    <a href="PINTEREST-URL" target="_blank">
-                        <svg fill="#ff9c33" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3333 3333" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" class="icon">
-                            <path d="M3021 0H313C141 0 0 141 0 312v2708c0 172 141 312 313 312h2708c172 0 313-141 313-312V312c0-172-141-312-313-312zM1177 2795c125-112 211-271 253-434 17-65 86-327 86-327 45 86 177 158 316 158 416 0 715-382 715-857 0-456-372-796-849-796-595 0-910 399-910 834 0 202 108 454 280 534 26 13 40 7 46-19 4-19 28-113 39-156 3-14 2-26-9-40-57-69-103-196-103-314 0-304 230-598 622-598 339 0 575 230 575 561 0 373-188 631-433 631-135 0-237-112-204-249 39-164 114-341 114-458 0-106-56-194-175-194-139 0-249 143-249 335 0 122 41 204 41 204s-137 577-162 685c-28 119-17 286-5 395l12 107z"/>
-                        </svg>
-                    </a>
-                    <a href="MEDIUM-URL" target="_blank">
-                        <svg fill="#ff9c33" width="800px" height="800px" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" class="icon">
-                            <path d="M880 112H144c-17.7 0-32 14.3-32 32v736c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V144c0-17.7-14.3-32-32-32zM768 317.7l-40.8 39.1c-3.6 2.7-5.3 7.1-4.6 11.4v287.7c-.7 4.4 1 8.8 4.6 11.4l40 39.1v8.7H566.4v-8.3l41.3-40.1c4.1-4.1 4.1-5.3 4.1-11.4V422.5l-115 291.6h-15.5L347.5 422.5V618c-1.2 8.2 1.7 16.5 7.5 22.4l53.8 65.1v8.7H256v-8.7l53.8-65.1a26.1 26.1 0 0 0 7-22.4V392c.7-6.3-1.7-12.4-6.5-16.7l-47.8-57.6V309H411l114.6 251.5 100.9-251.3H768v8.5z"/>
-                        </svg>
-                    </a>
-                </div>
+                    <!--social media layout and placeholders-->
+                    <a href="LINKEDIN-URL" target="_blank">
+                       <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <g clip-path="url(#clip0_108_309)">
+                           <path d="M29.6429 0H2.36607C1.05655 0 0 1.02679 0 2.29167V29.7098C0 30.9747 1.05655 32.0015 2.36607 32.0015H29.6429C30.9449 32.0015 32.0089 30.9747 32.0089 29.7098V2.29167C32.0015 1.02679 30.9449 0 29.6429 0ZM9.70238 26.7857H4.86607V12.3363H9.70238V26.7857ZM7.28423 10.3646H7.25446C5.63244 10.3646 4.58333 9.25595 4.58333 7.86458C4.58333 6.45089 5.6622 5.37202 7.32143 5.37202C8.97321 5.37202 9.99256 6.45089 10.0223 7.86458C10.0223 9.25595 8.97321 10.3646 7.28423 10.3646ZM27.1354 26.7857H22.2991V19.0551C22.2991 17.1131 21.5997 15.7887 19.8512 15.7887C18.5119 15.7887 17.7232 16.6815 17.3735 17.5446C17.247 17.8497 17.2098 18.2812 17.2098 18.7128V26.7857H12.3735C12.3735 26.7857 12.4405 13.6905 12.3735 12.3363H17.2098V14.3824C17.8497 13.4003 18.9955 11.994 21.5625 11.994C24.747 11.994 27.128 14.0551 27.128 18.497L27.1354 26.7857ZM17.1801 14.4345C17.1875 14.4196 17.2024 14.4048 17.2098 14.3899V14.4345H17.1801Z" fill="#FFB05D"/>
+                           </g>
+                           <defs>
+                           <clipPath id="clip0_108_309">
+                           <rect width="32" height="32" fill="white"/>
+                           </clipPath>
+                           </defs>
+                           </svg>
+                           
+                   </a>
+                   <a href="PINTEREST-URL" target="_blank">
+                       <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <g clip-path="url(#clip0_108_313)">
+                           <path fill-rule="evenodd" clip-rule="evenodd" d="M28.9958 0H3.0042C1.35333 0 0 1.35414 0 2.9964V29.0036C0 30.6555 1.35333 32 3.0042 32H28.9958C30.6467 32 32 30.6459 32 29.0036V2.9964C32 1.34454 30.6467 0 28.9958 0ZM11.2969 26.8427C12.4967 25.7671 13.3221 24.2401 13.7253 22.6747C13.8884 22.0504 14.5507 19.5342 14.5507 19.5342C14.9826 20.3601 16.2496 21.0516 17.5837 21.0516C21.5765 21.0516 24.4463 17.383 24.4463 12.8211C24.4463 8.44178 20.8758 5.17647 16.2975 5.17647C10.5867 5.17647 7.56329 9.0084 7.56329 13.1861C7.56329 15.1261 8.59988 17.5462 10.2508 18.3145C10.5003 18.4394 10.6347 18.3818 10.6923 18.1321C10.7307 17.9496 10.961 17.0468 11.0666 16.6339C11.0954 16.4994 11.0858 16.3842 10.9802 16.2497C10.4331 15.587 9.9916 14.3673 9.9916 13.2341C9.9916 10.3145 12.1992 7.491 15.9616 7.491C19.2154 7.491 21.4805 9.69988 21.4805 12.8788C21.4805 16.461 19.6761 18.9388 17.3245 18.9388C16.0288 18.9388 15.0498 17.8631 15.3665 16.5474C15.7409 14.9724 16.4607 13.2725 16.4607 12.1489C16.4607 11.1309 15.9232 10.2857 14.781 10.2857C13.4469 10.2857 12.3911 11.6591 12.3911 13.503C12.3911 14.6747 12.7846 15.4622 12.7846 15.4622C12.7846 15.4622 11.4697 21.0036 11.2298 22.0408C10.961 23.1837 11.0666 24.7875 11.1818 25.8343L11.2969 26.8619V26.8427Z" fill="#FFB05D"/>
+                           </g>
+                           <defs>
+                           <clipPath id="clip0_108_313">
+                           <rect width="32" height="32" fill="white"/>
+                           </clipPath>
+                           </defs>
+                           </svg>
+                   </a>
+                   <a href="MEDIUM-URL" target="_blank">
+                       <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <g clip-path="url(#clip0_108_315)">
+                           <path d="M30.7454 -0.0256348H1.30539C0.597391 -0.0256348 0.0253906 0.546365 0.0253906 1.25437V30.6944C0.0253906 31.4024 0.597391 31.9744 1.30539 31.9744H30.7454C31.4534 31.9744 32.0254 31.4024 32.0254 30.6944V1.25437C32.0254 0.546365 31.4534 -0.0256348 30.7454 -0.0256348ZM26.2654 8.20237L24.6334 9.76636C24.4894 9.87436 24.4214 10.0504 24.4494 10.2224V21.7304C24.4214 21.9064 24.4894 22.0824 24.6334 22.1864L26.2334 23.7504V24.0984H18.2014V23.7664L19.8534 22.1624C20.0174 21.9984 20.0174 21.9504 20.0174 21.7064V12.3944L15.4174 24.0584H14.7974L9.44539 12.3944V20.2144C9.39739 20.5424 9.51339 20.8744 9.74539 21.1104L11.8974 23.7144V24.0624H5.78539V23.7144L7.93739 21.1104C8.05077 20.9932 8.13515 20.8512 8.18378 20.6956C8.2324 20.54 8.24391 20.3752 8.21739 20.2144V11.1744C8.24539 10.9224 8.14939 10.6784 7.95739 10.5064L6.04539 8.20237V7.85436H11.9854L16.5694 17.9144L20.6054 7.86237H26.2654V8.20237Z" fill="#FFB05D"/>
+                           </g>
+                           <defs>
+                           <clipPath id="clip0_108_315">
+                           <rect width="32" height="32" fill="white"/>
+                           </clipPath>
+                           </defs>
+                           </svg>
+                           
+                   </a>
+               </div>
                 <p>Copyright Rachel Beyerlein 2023</p>
             </div>
         </footer>
