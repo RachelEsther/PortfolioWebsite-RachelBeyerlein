@@ -144,6 +144,7 @@ a {
     solid #4a4a4a; 
     display: flex;
     column-gap: 32px;
+    flex-direction: column;
   }
 
   .work {
@@ -170,7 +171,7 @@ a {
 
   #global-nav {
     max-width: 1200px;
-    /*margin: 0 auto;*/
+    margin: 0 auto;
     }
 
   nav > ul {
@@ -388,9 +389,6 @@ Medium devices (640px and larger)
     float: right;
     margin-top: 4px;
   }
-  .col-md-6 {
-    width: 50%;
-  }
 
   [class*="col-"] {
     float: left;
@@ -425,7 +423,16 @@ Large devices (1024px or larger)
 }
 
 /* ==============================
-X-large devices (1440px or larger)
+X-large devices (1200px or larger)
 ================================= */
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1200px) {
 }
+
+.work .row{
+  flex-direction: row;
+}
+
+.work img {
+  max-width: 100%;
+}
+
