@@ -122,6 +122,7 @@ a {
     align-items: center;
     text-align: center;
   }
+
   .heading:after {
     content: '';
     border-bottom: 3px solid #B15F48;
@@ -129,10 +130,6 @@ a {
     width: 150px;
   }
 
-  .proj-nam {
-    padding-top: 0;
-    margin-top: 0;
-  }
 
   .container {
     max-width: 1200px;
@@ -161,11 +158,12 @@ a {
     solid #7b3c04;
   }
 
+  /*GLOBAL NAV HEADER*/
   header {
-    background-color: #d829cc;
+    background-color: #003315;
     padding: 15px 0 0px;
     margin: 0px;
-    border-bottom: 3px solid #d829cc;
+    border-bottom: 3px solid #003315;
     position: fixed;
     width: 100%;
   }
@@ -178,9 +176,12 @@ a {
   nav > ul {
     list-style-type: none;
     margin: 1em 0;
+    padding-right: 20px;
     text-transform: uppercase;
     font-weight: 700;
     color:#ffffff;
+    float: right;
+    text-align: right;
   }
 
   nav > ul > li > a,
@@ -194,7 +195,7 @@ a {
   nav > ul > li > a:hover, 
   nav > ul > li > a:active
   {
-    color:#003315;
+    color:#ff3aeb;
   }
 
 .navtoggle.responsive {
@@ -203,6 +204,7 @@ a {
 
 .navtoggle li:not(:last-child) {
   display: none;
+  position: relative;
 }
 
 .navtoggle.responsive li:not(:last-child) {
@@ -222,8 +224,6 @@ a {
 
 
 /*about page*/
-
-
   #about-page {
     padding-top: 100px;
   }
@@ -238,24 +238,27 @@ a {
   }
 
   /*Home page css*/
-
   .work img {
     max-width: 100%;
     border-radius: 25px;
   }
 
-  /*Case Study CSS*/
+#hero h1{
+  font-size: 3em;
+}
 
 #hero {
-    color:#d829cc;
+    color:#72ff75;
     background-color: #003315;
-    padding: 20px 0;
+    padding: 30px 10px;
     display: inline-block;
     width: 100%;
     padding-top: 90px;
     text-align: center;
   }
 
+
+/*Case Study CSS*/
 #hormony {
     padding-top: 65px;
   }
@@ -305,7 +308,7 @@ div.casestudy img {
 /*footer css*/
 
 #contact {
-  background-color:#904b0e;
+  background-color:#5c0083;
   padding: 20px 0;
   display: inline-block;
   width: 100%;
@@ -360,6 +363,15 @@ Medium devices (640px and larger)
 
 @media only screen and (min-width: 640px) {
 
+  #logo {
+    font-size: 30px;
+    align-items: center;
+  }
+
+  #hero h1{
+    font-size: 4em;
+  }
+
   nav {
     width: auto;
     float: right;
@@ -389,16 +401,11 @@ Medium devices (640px and larger)
     text-transform: uppercase;
     font-weight: 700;
     color:#ffffff;
-
-  }
+ }
 
   header {
     text-align: unset;
     padding: 10px 0 4px;
-  }
-
-  #logo {
-    font-size: 30px;
   }
 
   .row::after {
@@ -427,9 +434,6 @@ Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) { 
 
-  #logo {
-    font-size: 30px;
-  }
  
   .global-nav {
     width: 100%;
