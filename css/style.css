@@ -243,6 +243,12 @@ a {
     border-radius: 25px;
   }
 
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
 #hero h1{
   font-size: 3em;
 }
