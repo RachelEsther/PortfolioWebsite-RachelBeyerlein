@@ -24,6 +24,7 @@ h1, h2, h3, h4 {
     font-weight: 600;
     line-height: 1em;
   }
+
   h2 {
     font-size: 2.25em;
     font-weight: 600;
@@ -128,29 +129,29 @@ a {
     width: 150px;
   }
 
+  .proj-nam {
+    padding-top: 0;
+    margin-top: 0;
+  }
+
   .container {
     max-width: 1200px;
     padding: 0;
   }
 
-  .row {
-    margin: 25px 0; /* 25px top and bottom, 0 left and right */
-  }
-
   .work .row { 
+    padding: 24px;
     padding-bottom: 25px; 
-    padding: 10px;
-    border-bottom: 1px 
-    solid #4a4a4a; 
     display: flex;
     column-gap: 32px;
     flex-direction: column;
+    align-items: center;
+    border-bottom: 2px solid #003315; 
   }
 
   .work {
     margin: auto;
-    padding: 5vw;
-    align-items: center;
+    padding: 2%;
   }
 
   .work h2 {
@@ -169,23 +170,25 @@ a {
     width: 100%;
   }
 
-  #global-nav {
+  .global-nav {
     max-width: 1200px;
     margin: 0 auto;
     }
 
   nav > ul {
     list-style-type: none;
-    padding: 0;
-    margin: 0;
+    margin: 1em 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    color:#ffffff;
   }
 
+  nav > ul > li > a,
   nav > ul > li > a:visited, 
   nav > ul > li > a:focus
 {
     color: #ffffff;
     display: inline-block;
-    width: 100%;
   }
 
   nav > ul > li > a:hover, 
@@ -194,28 +197,33 @@ a {
     color:#003315;
   }
 
-.navtoggle, 
 .navtoggle.responsive {
-  position: relative;
-}
-
-.navtoggle.responsive li  {
   display: block;
-}
-
-.navtoggle li .icon {
-  right: 10px;
-  top: 2px;
-  font-size: 20px;
-  padding-right: 0;
-  position: absolute;
 }
 
 .navtoggle li:not(:last-child) {
   display: none;
 }
 
- 
+.navtoggle.responsive li:not(:last-child) {
+  display: block;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li #icon {
+  position: absolute;
+  right: 10px;
+  top: 2px;
+  font-size: 20px;
+}
+
+
+/*about page*/
+
+
   #about-page {
     padding-top: 100px;
   }
@@ -229,10 +237,10 @@ a {
     margin-top: 0;
   }
 
-  /*index.html css*/
+  /*Home page css*/
 
   .work img {
-    max-width: 500px;
+    max-width: 100%;
     border-radius: 25px;
   }
 
@@ -306,7 +314,8 @@ div.casestudy img {
 }
 
 #contact svg {
-  padding: 20px 10px;
+  margin: 20px 10px;
+
 }
 
 /*illustration CSS*/
@@ -354,10 +363,16 @@ Medium devices (640px and larger)
   nav {
     width: auto;
     float: right;
+    margin-top: 4px;
   }
-  
+
+  [class*="col-"] {
+    float: left;
+  }
+
   nav > ul {
     margin: 1em 0;
+    list-style-type: none;
   }
 
   .navtoggle li:not(:last-child) {
@@ -373,6 +388,8 @@ Medium devices (640px and larger)
     padding: 0 15px;
     text-transform: uppercase;
     font-weight: 700;
+    color:#ffffff;
+
   }
 
   header {
@@ -384,20 +401,24 @@ Medium devices (640px and larger)
     font-size: 30px;
   }
 
-  nav {
-    width: auto;
-    float: right;
-    margin-top: 4px;
-  }
-
-  [class*="col-"] {
-    float: left;
-  }
-
   .row::after {
     content: "";
     clear: both;
     display: table;
+  }
+}
+
+/* ==============================
+Medium-Large devices (800px or larger)
+================================= */
+@media only screen and (min-width: 800px) {
+ 
+  .work .row{
+    flex-direction: row;
+  }
+  
+  .work img {
+    min-width: 500px;
   }
 }
 
@@ -410,7 +431,7 @@ Large devices (1024px or larger)
     font-size: 30px;
   }
  
-  #global-nav {
+  .global-nav {
     width: 100%;
   }
 
@@ -426,13 +447,8 @@ Large devices (1024px or larger)
 X-large devices (1200px or larger)
 ================================= */
 @media only screen and (min-width: 1200px) {
+ 
+ 
 }
 
-.work .row{
-  flex-direction: row;
-}
-
-.work img {
-  max-width: 100%;
-}
 

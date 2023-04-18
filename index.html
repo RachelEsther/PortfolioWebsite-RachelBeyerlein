@@ -9,10 +9,9 @@
         <title>Rachel Beyerlein UX/UI and Graphic Designer based in Montreal</title>
         <link href="img/branding/airplane_favicon.ico" rel="icon" type="image/x-icon">
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
-        <script src="https://kit.fontawesome.com/29e6e37e41.js" crossorigin="anonymous"></script>
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Shade&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Fraunces:ital,wght@0,300;0,400;0,500;0,600;1,600&display=swap" rel="stylesheet">
     </head>
@@ -20,7 +19,7 @@
     <body>
         <!--For the header-->
         <header>
-            <div id="global-nav">
+            <div class="global-nav">
                 <div class="navtoggle" id="myNavtoggle">
                     <a href="index.html" id="logo">Rachel Beyerlein</a>
                     <nav>
@@ -28,7 +27,7 @@
                         <li><a href="index.html">UX Design</a></li>
                         <li><a href="about.html">About me</a></li>
                         <li><a href="about.html#contact" onclick="menuToggle()">Contact</a></li>
-                        <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fa-solid fa-bars" style="color: #ffb2e5;"></i></a></li>
+                        <li><a href="javascript:void(0);" id="icon" onclick="menuToggle()"><i class="fa-solid fa-bars" style="color: #ffffff;"></i></a></li>
                         </ul>
                     </nav>
                 </div>
@@ -49,7 +48,7 @@
         <!--For work/projects-->
         <div class="work">
             <div class="container"><!--projects-->
-                <h2>my work</h2>
+                <!--<h2>my work</h2>-->
                 <div class="row"><!--first project-->
                     <div class="column"><!--open first column for photo-->
                         <picture>
@@ -59,7 +58,7 @@
                     </div><!--end first column for photo-->
                     <div class="column"><!--second column for text-->
                        <div class="gutter-left">
-                            <a href="hormony.html"><h3>hormony</h3></a>
+                            <a href="hormony.html"><h3 class="proj-nam">hormony</h3></a>
                             <p>Student-project: hormony is a conceptual responsive web application that allows users to monitor and track hormonal health concerns in order to better understand their own personal hormonal fluctuations. With emphasis on education and comradery, the hormony community encourages users to live in harmony with their hormones.</p>
                             <p>User Research / Information Architecture / UX design / UI Design</p>
                             <a href="hormony.html" class="button">more</a>
@@ -74,14 +73,14 @@
                         </picture>
                     </div><!--end first column for photo-->
                     <div><!--second column for text-->
-                        <h3>Linglobal</h3>
+                        <h3 class="proj-nam">Linglobal</h3>
                         <p>Student Project: Linglobal is a personalized international pocket dictionary and language learning native app for expats and immigrants looking for situational language acquisition. AKA An app that lets you speak like a local with the locals.</p>
                         <p>User Research / UX design</p>
-                        <a href="/Linglobal" class="button">more</a>
+                        <a href="/Linglobal" class="button">COMING SOON</a>
                     </div><!--end second column for text-->
                 </div><!--end of second project-->
                 <div class="row"><!--third project-->
-                    <div class="col-md-6 col-lg-8 col-xl-4"><!--open first column for photo-->
+                    <div><!--open first column for photo-->
                         <svg id="about-picture" xmlns="http://www.w3.org/2000/svg" class="berlin-illustration" height="auto" viewBox="0 0 700 505" xmlns:xlink="http://www.w3.org/1999/xlink">
                             <defs>
                                 <polygon id="a" points=".06 231.917 .06 .929 688.717 .929 688.717 231.917"></polygon>
@@ -682,8 +681,8 @@
                             </g>
                         </svg>
                     </div><!--end first column for photo-->
-                    <div class="col-md-6 col-lg-8 col-xl-4"><!--second column for text-->
-                        <h3>Brandenburg Gate</h3>
+                    <div><!--second column for text-->
+                        <h3 class="proj-nam">Brandenburg Gate</h3>
                         <p>css animation</p>
                     </div><!--end second column for text-->
                 </div><!--end of third project-->
@@ -717,7 +716,7 @@
                     <a href="PINTEREST-URL" target="_blank">
                         <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_108_313)">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M28.9958 0H3.0042C1.35333 0 0 1.35414 0 2.9964V29.0036C0 30.6555 1.35333 32 3.0042 32H28.9958C30.6467 32 32 30.6459 32 29.0036V2.9964C32 1.34454 30.6467 0 28.9958 0ZM11.2969 26.8427C12.4967 25.7671 13.3221 24.2401 13.7253 22.6747C13.8884 22.0504 14.5507 19.5342 14.5507 19.5342C14.9826 20.3601 16.2496 21.0516 17.5837 21.0516C21.5765 21.0516 24.4463 17.383 24.4463 12.8211C24.4463 8.44178 20.8758 5.17647 16.2975 5.17647C10.5867 5.17647 7.56329 9.0084 7.56329 13.1861C7.56329 15.1261 8.59988 17.5462 10.2508 18.3145C10.5003 18.4394 10.6347 18.3818 10.6923 18.1321C10.7307 17.9496 10.961 17.0468 11.0666 16.6339C11.0954 16.4994 11.0858 16.3842 10.9802 16.2497C10.4331 15.587 9.9916 14.3673 9.9916 13.2341C9.9916 10.3145 12.1992 7.491 15.9616 7.491C19.2154 7.491 21.4805 9.69988 21.4805 12.8788C21.4805 16.461 19.6761 18.9388 17.3245 18.9388C16.0288 18.9388 15.0498 17.8631 15.3665 16.5474C15.7409 14.9724 16.4607 13.2725 16.4607 12.1489C16.4607 11.1309 15.9232 10.2857 14.781 10.2857C13.4469 10.2857 12.3911 11.6591 12.3911 13.503C12.3911 14.6747 12.7846 15.4622 12.7846 15.4622C12.7846 15.4622 11.4697 21.0036 11.2298 22.0408C10.961 23.1837 11.0666 24.7875 11.1818 25.8343L11.2969 26.8619V26.8427Z" fill="#FFB05D"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M28.9958 0H3.0042C1.35333 0 0 1.35414 0 2.9964V29.0036C0 30.6555 1.35333 32 3.0042 32H28.9958C30.6467 32 32 30.6459 32 29.0036V2.9964C32 1.34454 30.6467 0 28.9958 0ZM11.2969 26.8427C12.4967 25.7671 13.3221 24.2401 13.7253 22.6747C13.8884 22.0504 14.5507 19.5342 14.5507 19.5342C14.9826 20.3601 16.2496 21.0516 17.5837 21.0516C21.5765 21.0516 24.4463 17.383 24.4463 12.8211C24.4463 8.44178 20.8758 5.17647 16.2975 5.17647C10.5867 5.17647 7.56329 9.0084 7.56329 13.1861C7.56329 15.1261 8.59988 17.5462 10.2508 18.3145C10.5003 18.4394 10.6347 18.3818 10.6923 18.1321C10.7307 17.9496 10.961 17.0468 11.0666 16.6339C11.0954 16.4994 11.0858 16.3842 10.9802 16.2497C10.4331 15.587 9.9916 14.3673 9.9916 13.2341C9.9916 10.3145 12.1992 7.491 15.9616 7.491C19.2154 7.491 21.4805 9.69988 21.4805 12.8788C21.4805 16.461 19.6761 18.9388 17.3245 18.9388C16.0288 18.9388 15.0498 17.8631 15.3665 16.5474C15.7409 14.9724 16.4607 13.2725 16.4607 12.1489C16.4607 11.1309 15.9232 10.2857 14.781 10.2857C13.4469 10.2857 12.3911 11.6591 12.3911 13.503C12.3911 14.6747 12.7846 15.4622 12.7846 15.4622C12.7846 15.4622 11.4697 21.0036 11.2298 22.0408C10.961 23.1837 11.0666 24.7875 11.1818 25.8343L11.2969 26.8619V26.8427Z" fill="#FFFFFF"/>
                             </g>
                             <defs>
                             <clipPath id="clip0_108_313">
@@ -729,7 +728,7 @@
                     <a href="MEDIUM-URL" target="_blank">
                         <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_108_315)">
-                            <path d="M30.7454 -0.0256348H1.30539C0.597391 -0.0256348 0.0253906 0.546365 0.0253906 1.25437V30.6944C0.0253906 31.4024 0.597391 31.9744 1.30539 31.9744H30.7454C31.4534 31.9744 32.0254 31.4024 32.0254 30.6944V1.25437C32.0254 0.546365 31.4534 -0.0256348 30.7454 -0.0256348ZM26.2654 8.20237L24.6334 9.76636C24.4894 9.87436 24.4214 10.0504 24.4494 10.2224V21.7304C24.4214 21.9064 24.4894 22.0824 24.6334 22.1864L26.2334 23.7504V24.0984H18.2014V23.7664L19.8534 22.1624C20.0174 21.9984 20.0174 21.9504 20.0174 21.7064V12.3944L15.4174 24.0584H14.7974L9.44539 12.3944V20.2144C9.39739 20.5424 9.51339 20.8744 9.74539 21.1104L11.8974 23.7144V24.0624H5.78539V23.7144L7.93739 21.1104C8.05077 20.9932 8.13515 20.8512 8.18378 20.6956C8.2324 20.54 8.24391 20.3752 8.21739 20.2144V11.1744C8.24539 10.9224 8.14939 10.6784 7.95739 10.5064L6.04539 8.20237V7.85436H11.9854L16.5694 17.9144L20.6054 7.86237H26.2654V8.20237Z" fill="#FFB05D"/>
+                            <path d="M30.7454 -0.0256348H1.30539C0.597391 -0.0256348 0.0253906 0.546365 0.0253906 1.25437V30.6944C0.0253906 31.4024 0.597391 31.9744 1.30539 31.9744H30.7454C31.4534 31.9744 32.0254 31.4024 32.0254 30.6944V1.25437C32.0254 0.546365 31.4534 -0.0256348 30.7454 -0.0256348ZM26.2654 8.20237L24.6334 9.76636C24.4894 9.87436 24.4214 10.0504 24.4494 10.2224V21.7304C24.4214 21.9064 24.4894 22.0824 24.6334 22.1864L26.2334 23.7504V24.0984H18.2014V23.7664L19.8534 22.1624C20.0174 21.9984 20.0174 21.9504 20.0174 21.7064V12.3944L15.4174 24.0584H14.7974L9.44539 12.3944V20.2144C9.39739 20.5424 9.51339 20.8744 9.74539 21.1104L11.8974 23.7144V24.0624H5.78539V23.7144L7.93739 21.1104C8.05077 20.9932 8.13515 20.8512 8.18378 20.6956C8.2324 20.54 8.24391 20.3752 8.21739 20.2144V11.1744C8.24539 10.9224 8.14939 10.6784 7.95739 10.5064L6.04539 8.20237V7.85436H11.9854L16.5694 17.9144L20.6054 7.86237H26.2654V8.20237Z" fill="#FFFFFF"/>
                             </g>
                             <defs>
                             <clipPath id="clip0_108_315">
@@ -742,10 +741,7 @@
                 <p>Copyright Rachel Beyerlein 2023</p>
             </div>
         </footer>
-        <script
-        src="https://code.jquery.com/jquery-3.6.4.min.js"
-        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
-        crossorigin="anonymous"></script>       
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
         <script src="js/scripts.js"></script>
     </body>
 </html>
