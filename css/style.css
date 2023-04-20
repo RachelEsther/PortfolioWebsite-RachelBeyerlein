@@ -55,11 +55,11 @@ a {
 
   a:hover,
   a:focus {
-  color: #a306f1;
+  color: #ff3ad8;
   }
 
   a:active { /* selected link */
-    color: #ff7f50;
+    color:#ff9c33;
   }
   
   #logo {
@@ -94,7 +94,7 @@ a {
 
   .button:hover,
   .button:active {
-    color: #a306f1;
+    color: #f1069f;
   }
 
   .button.contact {
@@ -195,7 +195,7 @@ a {
   nav > ul > li > a:hover, 
   nav > ul > li > a:active
   {
-    color:#ff3aeb;
+    color:#ffa8f6;
   }
 
 .navtoggle.responsive {
