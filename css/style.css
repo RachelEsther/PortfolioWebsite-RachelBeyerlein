@@ -30,6 +30,13 @@ h5 {
   color:#ffffff;
 }
 
+b {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  color:#003315;
+}
+
 h1, h2, h3, h4 {
     font-family: 'Fraunces', serif;
 
@@ -51,7 +58,7 @@ h1, h2, h3, h4 {
     font-weight: 600;
     margin-top: 50px;
     text-align: center;
-    color:#B15F48;
+    color:#003315;
   }
 
   h4 {
@@ -67,12 +74,12 @@ h1, h2, h3, h4 {
   }
 
 a {
-    color: #ff7f50;
-    text-decoration: none; /* No underlining */
+    color:#f1069f;
+    text-decoration: none;
 }
 
   a:visited { /* visited link */
-    color: #ff7f50;
+    color: #f1069f;
   }
 
   a:hover,
@@ -81,7 +88,7 @@ a {
   }
 
   a:active { /* selected link */
-    color:#ff9c33;
+    color:#f1069f;
   }
   
   #logo {
@@ -95,10 +102,10 @@ a {
 
 .button {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #fbeee0;
-  border: 2px solid #422800;
+  background-color: #ffffff;
+  border: 2px solid #003315;
   border-radius: 30px;
-  box-shadow: #422800 4px 4px 0 0;
+  box-shadow: #003315 4px 4px 0 0;
   cursor: pointer;
   font-weight: 600;
   font-size: 18px;
@@ -119,15 +126,15 @@ a {
   }
 
   .button.contact {
-    background-color: #fbeee0;;
+    background-color:#ffffff;;
     text-transform: uppercase;
-    border: 2px solid #ff9c33;
-    box-shadow: #ff9c33 4px 4px 0 0;
+    border: 2px solid #72ff75;
+    box-shadow: #72ff75 4px 4px 0 0;
   }
 
   .button.contact:hover,
   .button.contact:active {
-    background-color: #a306f1;
+    background-color:#ffa8f6;
     color: #ffffff;
   }
 
@@ -147,17 +154,19 @@ a {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    padding-top: 5%;
   }
 
   .heading:after {
     content: '';
-    border-bottom: 3px solid #B15F48;
+    border-bottom: 3px solid #003315;
     padding-top: 10px;
     width: 150px;
   }
 
   .container {
     padding: 0;
+    max-width: 1200px;
     
   }
 
@@ -349,7 +358,7 @@ padding-right: 5vw;;
   
 .KeyTakeaways {
   display: block;
-    background-color: #B15F48;
+    background-color: #003315;
     color: #ffffff;
     padding: 15px;
     border-radius: 25px;
@@ -359,7 +368,7 @@ padding-right: 5vw;;
 
   #hormony span {
     text-align: center;
-    color:#7b3c04;
+    color:#003315;
     display: inline;
   }
 
@@ -400,7 +409,7 @@ div.casestudy svg {
 /*footer css*/
 
 #contact {
-  background-color:#5c0083;
+  background-color:#003315;
   padding: 20px 0;
   display: inline-block;
   width: 100%;
