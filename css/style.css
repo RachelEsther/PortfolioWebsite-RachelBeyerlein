@@ -395,6 +395,10 @@ nav > ul > li > a:active {
   display: inline;
 }
 
+.youtube-video {
+  width: 100%;
+}
+
 div .fullwidthcontainer {
   max-width: 100%;
   height: auto;
