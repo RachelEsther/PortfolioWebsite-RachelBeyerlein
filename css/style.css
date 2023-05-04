@@ -54,12 +54,13 @@ h2 {
   font-size: 2.25em;
   font-weight: 600;
   text-align: center;
+  margin: 0;
 }
 
 h3 {
   font-size: 1.75em;
   font-weight: 600;
-  margin-top: 50px;
+  margin-top: 0;
   text-align: center;
   color: #003315;
 }
@@ -175,7 +176,7 @@ div picture {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding-top: 5%;
+  padding-top: 10%;
 }
 
 .heading::after {
@@ -317,6 +318,10 @@ nav > ul > li > a:active {
   padding-right: 5vw;
 }
 
+.about_skills {
+  padding-top: 5%;
+}
+
 .about_skills .row {
   display: flex;
   padding: 0 5% 0 0;
@@ -366,7 +371,7 @@ nav > ul > li > a:active {
 /* Case Study */
 
 #hormony {
-  padding-top: 50px;
+  padding-top: 2%;
 }
 
 #hormonyhero {
@@ -375,8 +380,9 @@ nav > ul > li > a:active {
 }
 
 #hormonyhero-pic {
-  margin-right: 0;
-  margin-bottom: 0%;
+  margin: 0 auto;
+  padding-top: 100px;
+  width: 100%;
 }
 
 .KeyTakeaways {
@@ -386,7 +392,7 @@ nav > ul > li > a:active {
   padding: 15px;
   border-radius: 25px;
   width: 95%;
-  margin: 2% auto;
+  margin: 5% auto 0;
 }
 
 #hormony span {
